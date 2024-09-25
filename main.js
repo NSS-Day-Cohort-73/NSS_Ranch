@@ -2,6 +2,8 @@ const { roundup } = require("./cattle.js")
 const { hireDrovers } = require("./drovers.js")
 const { journeyMaker } = require("./journey.js")
 
+/* This line is saying: Run the hireDrovers function, give it cattleToDrive as input, and save the result in a variable called drovers.
+After this line runs, the variable drovers will contain the result (probably an array of hired "drovers") that the function hireDrovers returns. */
 const cattleToDrive = 50
 const drovers = hireDrovers(cattleToDrive)
 const cattle = roundup(cattleToDrive)
@@ -24,19 +26,15 @@ console.log(`
 
 console.log(`You will be accompanying ${drovers.length} drovers as they drive ${cattleToDrive} cattle to Old Red's Ranch for grazing`)
 console.log(`\nThe herd is made of up the following cattle (only their breed is shown):`)
-for (const cType of cattle) {
-    breedT = cattle
-    
-console.log(cattle.breedT)
-return cattle
-}
+console.log(`${cattle}\n`) 
+
 
 console.log("Here is the team of drovers you will be joining")
 for (const drover of drovers) {
-    console.log(`\t* ${drover.first_name} ${drover.last_name}`)
+  console.log(`\t* ${drover.first_name} ${drover.last_name}`)
 }
-
 console.log("\n\nYour journey will take you through the wildness of the American Midwest and across the following terrain")
 for (const area of journey) {
-    console.log(`\t* ${area}`)
+   console.log(`\t* ${area}`)
+
 }
