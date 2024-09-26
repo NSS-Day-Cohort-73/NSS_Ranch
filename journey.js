@@ -50,6 +50,7 @@ const journeyMaker = () => {
 }
 
 module.exports = {
+    journeyMaker,
     createRivers, createForests,
     createMountains, createPlains
 }
