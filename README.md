@@ -104,10 +104,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > When the line of code const drovers = hireDrovers(cattleToDrive) is executed in the main module, the value of the drovers variable will be determined by the return value of the hireDrovers function.
-   > To conclude, the drovers variable will contain the return value from the hireDrovers() function, which is influenced by the cattleToDrive parameter provided during the function call. The precise nature of the value depends on how the hireDrovers function is implemented.
+   > hireDrovers(cattleToDrive) is called: The function hireDrovers is invoked with the argument cattleToDrive.
+   > The hireDrovers function uses logic to determine the required number of drovers based on cattleToDrive.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Drovers: This is an array containing a collection of drovers, which could be strings, objects, or any other type of data. Drover: This is a variable that holds the current element being iterated over in the loop.
+   > Drovers: This array containing a collection of drovers which are objects.
+   > Drover: This variable expresses the current element being iterated over in the loop.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object.
    > (https://drive.google.com/file/d/1RzR0SGhg_7FDaLGXJxzVxAY8iW2bAnRW/view?usp=drive_link)
 4. Also in the **journey** module, there is the following code:
@@ -117,19 +118,18 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > In essence, this code constructs an array named journey filled with the string "forest" repeated a number of times equal to areas.forests. It effectively captures the concept of traversing through multiple forests, as iterated by the loop.
+   > This code creates an array named journey, filled with the string "forest" repeated multiple times, representing traversing through multiple forests iterated through the loop.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
    > The database is an object and is defined using the const variable, which means its reference cannot be reassigned.
-   > The drovers property is also an array, containing objects that represent individuals who likely work with the cattle. Each drover object has the following properties:
-   > id: A unique identifier for the drover.
+   > The drovers property is also an array of objects, which represent individuals who work with the cattle. Each drover object has the following properties:
+   > id: A special identifier for the drover.
    > first_name: The first name of the drover.
    > last_name: The last name of the drover.
    > gender: The gender of the drover.
 
-   > The provided code defines a JavaScript object called `database` that serves as a mock database for managing cattle and their caretakers (drovers). The object shares two main properties: `cattleTypes`, an array of objects representing different cattle breeds (each with a unique id and breed name), and `drovers`, an array of objects detailing individuals who work with the cattle, including their id, first name, last name, and gender. The code also includes an export statement, allowing the `database` object to be accessed across different modules.
+   > The code creates a JavaScript object called `database`, which functions as a copy database for cattle. It includes cattleTypes and drovers, and includes an export statement for module access.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > The `herdSize` notation in the `hireDrovers()` function represents a parameter that accepts an input value indicating the size of the herd needing drovers. This parameter allows the function to perform necessary calculations based on the herd size provided during function calls. The value for `herdSize` is assigned at the point of invocation, where a specific numeric value, such as the total number of animals in the herd, is passed to the function. Within the function, `herdSize` is essential for determining the number of drovers required, allocating resources, and making hiring drovers, thereby tailoring the function's functionality to the herd's needs.
-
+   > The `herdSize` variable in the `hireDrovers()` function is a parameter that determines the size of the herd needing drovers, allowing the function to perform calculations based on the input amount, ensuring the function's capabilities is attached to the herd's needs.
 
 ## Final Step
 
